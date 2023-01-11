@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration</title>
+<meta charset = 'UTF-8'>
+<link rel="stylesheet" href="decore.css">
+<script type="text/javascript" src="script.js"></script>	
+</head>
+<body>
+<form>
+<fieldset> <legend><b>  </b> </legend>
+
+<center><b>  Форма регистрации </b></center>
+
+<p>
+Фамилия 
+<br>     
+<input  id='family' type="text" required placeholder="Введите вашу фамилию" >
+</p>
+<p>
+    Имя    
+    <br> 
+    <input id='name' type="text" required placeholder="Введите ваше имя">
+    </p>
+<p>
+    <p>
+        Отчество
+        <br>         
+        <input id='otchestvo' type="text" required placeholder="Введите ваше отчество" >
+
+    </p>
+<p>
+Адрес электронной почты
+<br>  
+<input id='e-mail' type="email" required placeholder="Введите свой email" >
+</p>
+
+<p>
+Номер телефона
+<br> 
+ <input type="tel" required placeholder="Введите номер телефона" pattern="2-[0-9]{3}-[0-9]{3}">
+</p>
+
+<p>
+    Пароль
+    <br> 
+    <input id="pass" type="password"  required="required" placeholder="Введите пароль">
+</p>
+
+<p>
+    Подтверждение пароля
+    <br> 
+    <input id="repass" type="password"  required="required" placeholder="Введите пароль еще раз">
+</p>
+
+<p>
+    Согласен с условиями пользовательского соглашения
+    
+    <input id="checkbox" type="checkbox" name="checkbox" onchange="document.getElementById('submit').disabled = !this.checked;">
+</p>
+
+
+<p>
+<input type="submit"  disabled="disabled" name="submit" id="submit" disabled onclick="registration()" onclick="alert('Вы успешно зарегистрированы')" value="Зарегистрироваться">
+</p>
+
+
+
+
+
+</form>
+</body>
+</html>

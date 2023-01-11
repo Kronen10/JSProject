@@ -1,0 +1,12 @@
+input:invalid {
+	border: 1px solid rgb(8, 8, 8);
+	background-color: #65adf0;
+}
+
+fieldset {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(177, 180, 166);
+}
+
+
+
