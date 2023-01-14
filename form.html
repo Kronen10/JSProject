@@ -7,7 +7,7 @@
 <script type="text/javascript" src="script.js"></script>	
 </head>
 <body>
-<form>
+<form onsubmit="return cap()">
 <fieldset> <legend><b>  </b> </legend>
 
 <center><b>  Форма регистрации </b></center>
@@ -15,18 +15,18 @@
 <p>
 Фамилия 
 <br>     
-<input  id='family' type="text" required placeholder="Введите вашу фамилию" >
+<input id='family' type="text"  required placeholder="Введите вашу фамилию" >
 </p>
 <p>
     Имя    
     <br> 
-    <input id='name' type="text" required placeholder="Введите ваше имя">
+    <input id='name' type="text"  required placeholder="Введите ваше имя">
     </p>
 <p>
     <p>
         Отчество
         <br>         
-        <input id='otchestvo' type="text" required placeholder="Введите ваше отчество" >
+        <input id='otchestvo' type="text"  required placeholder="Введите ваше отчество" >
 
     </p>
 <p>
@@ -44,7 +44,7 @@
 <p>
     Пароль
     <br> 
-    <input id="pass" type="password"  required="required" placeholder="Введите пароль">
+    <input id="pass" type="password" minlength="8" required="required" placeholder="Введите пароль">
 </p>
 
 <p>
@@ -60,13 +60,31 @@
 </p>
 
 
+
+<label>Введите Captcha:</label>
+      <div>
+        <div>
+          <input type="text" id="capt">
+        </div>
+        <div>
+          <input type="text"  id="textinput">
+        </div>
+      </div>
+
+	
+			
+
+<p>
+  <input type="button"  name="submit2" id="submit2" onclick="cap()" value="Показать капчу">
+</p>
+			
+<p>
+  <input type="button"  name="submit3" id="submit3" onclick="validcap()" value="Проверить капчу">
+</p>
+
 <p>
 <input type="submit"  disabled="disabled" name="submit" id="submit" disabled onclick="registration()" onclick="alert('Вы успешно зарегистрированы')" value="Зарегистрироваться">
 </p>
-
-
-
-
 
 </form>
 </body>
